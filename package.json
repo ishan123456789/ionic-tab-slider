@@ -1,0 +1,40 @@
+{
+  "name": "ionic-tab-slider",
+  "version": "0.0.1",
+  "description": "Swipable slider with tabs like interface using segments and slider",
+  "main": "./dist/index.js",
+  "typings": "./dist/index.d.ts",
+  "scripts": {
+    "ngc": "ngc",
+    "build": "rm -rf aot dist && npm run ngc",
+    "publishPackage": "npm run build && npm publish"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ishan123456789/ionic-tab-slider.git"
+  },
+  "keywords": [
+    "Tabs with swipable action available"
+  ],
+  "author": "Ishan Mahajan",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ishan123456789/ionic-tab-slider/issues"
+  },
+  "homepage": "https://github.com/ishan123456789/ionic-tab-slider#readme",
+  "devDependencies": {
+    "@angular/common": "^4.0.0",
+    "@angular/compiler": "^4.0.0",
+    "@angular/compiler-cli": "^4.0.0",
+    "@angular/core": "^4.0.0",
+    "@angular/platform-browser": "^4.0.0",
+    "@angular/platform-browser-dynamic": "^4.0.0",
+    "@types/node": "^6.0.60",
+    "zone.js": "^0.8.4",
+    "rxjs": "^5.4.0",
+    "typescript": "^2.3.4"
+  },
+  "dependencies": {
+    "ionic-angular": "^3.9.2"
+  }
+}
