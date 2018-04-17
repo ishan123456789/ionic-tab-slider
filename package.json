@@ -1,6 +1,6 @@
 {
   "name": "ionic-tab-slider",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Swipable slider with tabs like interface using segments and slider",
   "main": "./dist/index.js",
   "typings": "./dist/index.d.ts",
@@ -11,7 +11,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ishan123456789/ionic-tab-slider.git"
+    "url": "https://github.com/ishan123456789/ionic-tab-slider.git"
   },
   "keywords": [
     "Tabs with swipable action available"

@@ -20,6 +20,7 @@ export class IonicTabSliderComponent  implements AfterViewInit  {
   }
   ngAfterViewInit() {
     this.currentSegment = this.tabs[0].name;
+    
   }
   segmentChanged($event) {
     console.log(this.currentSegment);

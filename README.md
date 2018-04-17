@@ -1,20 +1,12 @@
-# Ionic Module Template
+# Ionic tab slider
 
-This is a template for building your own reusable Angular2/Ionic2 module using TypeScript. Supports Angular's ngc and Ahead-of-Time compiling out of the box.
+This is a simple ionic module which will allow you to add images in array to get swipable tabs while this plugin uses simple ionic segments and ionic sliders
 
-## Developing
+## Install
 
-Develop your module like any other Angular 2 module. Then, run `npm run build` to build a local copy.
+Run `npm install ionic-tab-slider`.
 
-When you're ready to publish to npm, run `npm publishPackage`.
-
-If you'd like to test this package, run `npm install ionic-module-template`
-
-## npm link
-
-Currently, modules must be published to npm. `npm link` packages will not install properly with our webpack confing (something on our list). If you can't push private code to npm, other options are a private npm repo/npm enterprise, or `npm install` from a git repo.
-
-## Using your module in an Ionic 2 app
+## Using this plugin in an Ionic  app
 
 ```typescript
 import { NgModule } from '@angular/core';
@@ -23,7 +15,7 @@ import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
 
 // Import your module
-import { MyModule } from 'ionic-module-template';
+import { IonicTabSliderModule } from 'ionic-module-template';
 
 @NgModule({
   declarations: [
@@ -33,7 +25,7 @@ import { MyModule } from 'ionic-module-template';
   imports: [
     IonicModule.forRoot(MyApp),
 
-    MyModule // Put your module here
+    IonicTabSliderModule // Put your module here
   ],
   bootstrap: [IonicApp],
   entryComponents: [
@@ -44,3 +36,30 @@ import { MyModule } from 'ionic-module-template';
 })
 export class AppModule {}
 ```
+
+Then in your page go like this in 
+In your `page.component.ts`
+    ```
+      public tabs = [
+      {
+        name: 'Tab heading 1',
+        img:'https://www.gstatic.com/webp/gallery3/2_webp_ll.png'
+      },
+      {
+        name: 'Tab heading 2',
+        img:'https://www.gstatic.com/webp/gallery3/2_webp_ll.png'
+      },
+      {
+        name: 'Tab heading 3',
+        img:'https://www.gstatic.com/webp/gallery3/2_webp_ll.png'
+      },
+      {
+        name: 'Tab heading 4',
+        img:'https://www.gstatic.com/webp/gallery3/2_webp_ll.png'
+      }
+    ]
+    
+    ```
+And in your `page.component.ts`
+Add in your `page.component.html`
+   `<ionic-slider-tabs [tabs]="tabs"></ionic-slider-tabs>`

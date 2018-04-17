@@ -1,0 +1,21 @@
+<div padding>
+    <ion-segment [(ngModel)]="currentSegment" (ionChange)="segmentChanged($event)">
+        <ion-segment-button [value]="tab.name" class="is-dark" *ngFor="let tab of tabs;let i = index;">
+            {{tab.name}}
+        </ion-segment-button>
+    </ion-segment>
+</div>
+<ion-grid class="slider-content">
+    <ion-row>
+        <ion-slides (ionSlideDidChange)="slideChanged()">
+            <ion-slide *ngFor="let tab of tabs;let i = index;let last = last;">
+                <ion-list class="list">
+                    <ion-item class="margin-top item-home-restaurant">
+                        <img [src]="tab.img" alt="">
+                        <p>{{tab.name}}</p>
+                    </ion-item>
+                </ion-list>
+            </ion-slide>
+        </ion-slides>
+    </ion-row>
+</ion-grid>
