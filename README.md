@@ -39,8 +39,10 @@ export class AppModule {}
 
 Then in your page go like this in 
 In your `page.component.ts`
-    ```
-      public tabs = [
+
+
+```
+    public tabs = [
       {
         name: 'Tab heading 1',
         img:'https://www.gstatic.com/webp/gallery3/2_webp_ll.png'
@@ -58,8 +60,7 @@ In your `page.component.ts`
         img:'https://www.gstatic.com/webp/gallery3/2_webp_ll.png'
       }
     ]
-    
-    ```
+```    
 And in your `page.component.ts`
 Add in your `page.component.html`
    `<ionic-slider-tabs [tabs]="tabs"></ionic-slider-tabs>`
