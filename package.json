@@ -1,10 +1,10 @@
 {
   "name": "ionic-tab-slider",
-  "version": "0.0.3",
+  "version": "0.0.7",
   "description": "Swipable slider with tabs like interface using segments and slider",
   "main": "./dist/index.js",
   "typings": "./dist/index.d.ts",
-  "files": "dist",
+  "files": ["dist"],
   "scripts": {
     "ngc": "ngc",
     "build": "rm -rf aot dist && npm run ngc",
