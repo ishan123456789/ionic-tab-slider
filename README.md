@@ -44,19 +44,19 @@ In your `page.component.ts`
 ```
     public tabs = [
       {
-        name: 'Tab heading 1',
+        name: 'Tab 1',
         img:'https://www.gstatic.com/webp/gallery3/2_webp_ll.png'
       },
       {
-        name: 'Tab heading 2',
+        name: 'Tab 2',
         img:'https://www.gstatic.com/webp/gallery3/2_webp_ll.png'
       },
       {
-        name: 'Tab heading 3',
+        name: 'Tab 3',
         img:'https://www.gstatic.com/webp/gallery3/2_webp_ll.png'
       },
       {
-        name: 'Tab heading 4',
+        name: 'Tab 4',
         img:'https://www.gstatic.com/webp/gallery3/2_webp_ll.png'
       }
     ]
@@ -64,8 +64,8 @@ In your `page.component.ts`
 And in your `page.component.ts`
 Add in your `page.component.html`
    `<ionic-tab-slider [tabs]="tabs"></ionic-tab-slider>`
+   
 ## Working example of app
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/rYD1qyoo3zY" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+[![Working demo](https://img.youtube.com/vi/rYD1qyoo3zY/0.jpg)](https://www.youtube.com/watch?v=rYD1qyoo3zY)
 
-   
