@@ -64,3 +64,8 @@ In your `page.component.ts`
 And in your `page.component.ts`
 Add in your `page.component.html`
    `<ionic-tab-slider [tabs]="tabs"></ionic-tab-slider>`
+## Working example of app
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/rYD1qyoo3zY" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
+   
