@@ -3,7 +3,7 @@ import { Slides } from 'ionic-angular';
 import { AfterViewInit } from '@angular/core';
 
 @Component({
-  selector: 'my-component',
+  selector: 'ionic-tab-slider',
   templateUrl:  'ionic-tab-slider.html'
 })
 export class IonicTabSliderComponent  implements AfterViewInit  {
@@ -19,8 +19,7 @@ export class IonicTabSliderComponent  implements AfterViewInit  {
     this.text = 'Hello World';
   }
   ngAfterViewInit() {
-    this.currentSegment = this.tabs[0].name;
-    
+    this.currentSegment = this.tabs[0].name;    
   }
   segmentChanged($event) {
     console.log(this.currentSegment);

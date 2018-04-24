@@ -25,7 +25,7 @@ import { IonicTabSliderModule } from 'ionic-module-template';
   imports: [
     IonicModule.forRoot(MyApp),
 
-    IonicTabSliderModule // Put your module here
+    IonicTabSliderModule // Import this module here
   ],
   bootstrap: [IonicApp],
   entryComponents: [
@@ -63,4 +63,4 @@ In your `page.component.ts`
 ```    
 And in your `page.component.ts`
 Add in your `page.component.html`
-   `<ionic-slider-tabs [tabs]="tabs"></ionic-slider-tabs>`
+   `<ionic-tab-slider [tabs]="tabs"></ionic-tab-slider>`

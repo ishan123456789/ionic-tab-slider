@@ -1,8 +1,9 @@
 import { Observable } from 'rxjs';
 import { NgModule, ModuleWithProviders } from '@angular/core';
-import { IonicTabSliderComponent } from './components/ionic-tab-slider';
-// import { MyProvider } from './providers/my-provider';
+import { MyProvider } from './providers/my-provider';
 import {IonicModule} from 'ionic-angular';
+import { IonicTabSliderComponent } from './components/ionic-tab-slider';
+
 @NgModule({
   imports:[
     IonicModule
@@ -16,11 +17,11 @@ import {IonicModule} from 'ionic-angular';
     IonicTabSliderComponent
   ]
 })
-export class IonicTabSlider {
+export class IonicTabSliderModule {
   static forRoot(): ModuleWithProviders {
     return {
-      ngModule: IonicTabSlider,
-      providers: [  ]
+      ngModule: IonicTabSliderModule,
+      providers: [ MyProvider ]
     };
   }
 }
